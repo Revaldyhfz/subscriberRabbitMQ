@@ -18,5 +18,5 @@ the second guest, and what is localhost:5672 is for?
 ## Preparing Message Broker(RabbitMQ)
 
 1. Simulation Slow Subscriber
-![SlowSubscriber](/static/Screenshot5.jpg)
-
+![SlowSubscriber](/static/Screenshot8.jpg)
+    - my total number of queue is 20, this is due to the intentional delay introduced into the subscriber set at 1 second, despite seemingly brief delay, the rapid influx of messages in short amount of time results in the significant spike in delay
