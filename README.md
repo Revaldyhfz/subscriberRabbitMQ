@@ -20,3 +20,18 @@ the second guest, and what is localhost:5672 is for?
 1. Simulation Slow Subscriber
 ![SlowSubscriber](/static/Screenshot8.jpg)
     - my total number of queue is 20, this is due to the intentional delay introduced into the subscriber set at 1 second, despite seemingly brief delay, the rapid influx of messages in short amount of time results in the significant spike in delay
+
+2. Running atleast three subscribers
+
+- cargo run 4 times
+![threesubscriber](/static/Screenshot6.jpg)
+
+- cargo run 10 times
+
+![ThreeSubscriber3](/static/Screenshot10.jpg)
+
+- the 3 terminal
+![threeSubscriber2](/static/Screenshot9.jpg)
+
+from my observation it seems that the delay has reduced down a bit, i also did some test with different amount of queues. It seems like the delay decreases more rapidly compared to the previous scenario, this is because the message broker's distribution of messages among multiple subscriber. As a result, the delay diminishes more swiftly than in the previous setup.
+
