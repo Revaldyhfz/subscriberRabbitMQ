@@ -27,7 +27,6 @@ the second guest, and what is localhost:5672 is for?
 ![threesubscriber](/static/Screenshot6.jpg)
 
 - cargo run 10 times
-
 ![ThreeSubscriber3](/static/Screenshot10.jpg)
 
 - the 3 terminal
